@@ -1,5 +1,12 @@
+import Layout from "../../components/Layout";
+
 function Home(){
-    return(<h1 className="text-3xl font-bold">Home</h1>);
+    return( <Layout>
+            Home
+            </Layout>
+            )
+        
+      
 }
 
 export default Home
