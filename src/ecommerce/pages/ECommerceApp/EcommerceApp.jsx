@@ -5,6 +5,7 @@ import MyOrder from '../MyOrder'
 import MyOrders from '../MyOrders'
 import NotFound from '../NotFound'
 import SignIn from '../SignIn'
+import Navbar from '../../components/Navbar'
 
 const ECommerceAppRoutes = () =>{
     let routes = useRoutes ([
@@ -23,7 +24,10 @@ const EcommerceApp = () => {
     return(
         <BrowserRouter>
         <ECommerceAppRoutes/>
+        <Navbar/>
         </BrowserRouter>
     );
 }
 export default EcommerceApp
+
+ 
