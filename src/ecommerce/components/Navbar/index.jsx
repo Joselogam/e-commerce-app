@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom" 
+import { NavLink } from "react-router-dom" //Create a url/page for the element inside the tags (Like a hyperlink)
 
 const Navbar  = () => {
     const activeStyle = "underline underline-offset-4"
