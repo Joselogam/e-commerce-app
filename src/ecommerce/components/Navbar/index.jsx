@@ -1,6 +1,9 @@
 import { NavLink } from "react-router-dom" //Create a url/page for the element inside the tags (Like a hyperlink)
+import { useContext } from "react"
+import {ShoppingCartContext} from "../../Context"
 
 const Navbar  = () => {
+    const context = useContext(ShoppingCartContext)
     const activeStyle = "underline underline-offset-4"
     
     return (
@@ -79,7 +82,7 @@ const Navbar  = () => {
                         </NavLink>
                     </li>
                     <li>
-                    🛒 0 
+                    🛒 {context.count}
                     </li>
                 </ul>
 
